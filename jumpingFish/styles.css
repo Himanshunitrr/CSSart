@@ -1,27 +1,72 @@
+.wrapper {
+  position: absolute;
+  width: 1000px;
+  height: 600px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 .container{
   position: relative;
-  top: 20vh;
+  left: 50px;
   height: 300px;
   width: 300px;
-  background: red;
+  top: 100px;
+  /* background: black; */
 }
-.bowl{
+.another-container{
+  position: relative;
+  height: 300px;
+  width: 300px;
+  left: 500px;
+  top: -45px;
+  /* background: black; */
+}
+.water{
   position: relative;
   width: 290px;
   height: 290px;
-  background: white;
-  border-radius: 50%;
+  background: blue;
+  border-radius: 0% 0% 100% 100%;
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
 }
-.bowl:before{
+.body{
+  position: relative;
+  width: 120px;
+  height: 40px;
+  background: white;
+  left: 50%;
+  top: 50%;
+  border-radius: 50%;
+}
+/* .tail{
+  height: 20px;
+  width: 20px;
+  position: relative;
+  background: white;
+} */
+.tail:before{
+  content: "";
+  height: 16px;
+  background: white;
   position: absolute;
-  top: 200px;
-  left: 500px;
-  content: "h";
-  min-width: 50px;
-  min-height: 20px;
-  background: black;
-  z-index: 100;
+  width: 30px;
+  right: -10px;
+  top: 4px;
+  border-radius: 40%;
+  transform: rotate(-20deg);
+}
+.tail:after{
+  content: "";
+  height: 18px;
+  background: white;
+  position: absolute;
+  width: 30px;
+  right: -10px;
+  top: 20px;
+  border-radius: 40%;
+  transform: rotate(20deg);
+
 }
