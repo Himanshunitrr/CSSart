@@ -1,0 +1,27 @@
+.container{
+  position: relative;
+  top: 20vh;
+  height: 300px;
+  width: 300px;
+  background: red;
+}
+.bowl{
+  position: relative;
+  width: 290px;
+  height: 290px;
+  background: white;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.bowl:before{
+  position: absolute;
+  top: 200px;
+  left: 500px;
+  content: "h";
+  min-width: 50px;
+  min-height: 20px;
+  background: black;
+  z-index: 100;
+}
