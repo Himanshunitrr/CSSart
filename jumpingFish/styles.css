@@ -2,7 +2,7 @@
   position: absolute;
   width: 1000px;
   height: 600px;
-  top: 50%;
+  top: 60%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -20,6 +20,7 @@
   width: 300px;
   left: 500px;
   top: -45px;
+  z-index: -1;
   /* background: black; */
 }
 .water{
@@ -36,10 +37,134 @@
   position: relative;
   width: 120px;
   height: 40px;
-  background: white;
-  left: 50%;
+  background: black;
+  left: 40%;
   top: 50%;
   border-radius: 50%;
+  animation: jump 3s infinite;
+  z-index: 100;
+}
+@keyframes jump{
+  0%{
+    transform: rotate(0);
+    left: 40%;
+    top: 50%;
+  }
+  5%{
+    transform: rotate(20deg);
+    left: 45%;
+    top: 30%;
+  }
+  10%{
+    transform: rotate(40deg);
+    left: 48%;
+    top: 20%;
+  }
+  15%{
+    transform: rotate(90deg);
+    /* left: 40%; */
+    top: -10%;
+  }
+  20%{
+    transform: rotate(100deg);
+    left: 50%;
+    top: -20%;
+  }
+  25%{
+    transform: rotate(140deg);
+    left: 65%;
+    top: -30%;
+  }
+  30%{
+    transform: rotate(160deg);
+    left: 74%;
+    top: -50%;
+  }
+  35%{
+    transform: rotate(190deg);
+    left: 90%;
+    top: -75%;
+  }
+  40%{
+    transform: rotate(210deg);
+    left: 125%;
+    top: -55%;
+  }
+  45%{
+    transform: rotate(260deg);
+    left: 140%;
+    top: -20%;
+  }
+  50%{
+    transform: rotate(270deg);
+    left: 170%;
+    top: 30%;
+  }
+  52%{
+    transform: rotate(300deg);
+    left: 180%;
+    top: 50%;
+  }
+  55%{
+    transform: rotate(360deg);
+    left: 184%;
+    top: 50%;
+  }
+  60%{
+    transform: rotate(360deg);
+    left: 184%;
+    top: 50%;
+  }
+  65%{
+    transform: rotate(380deg);
+    left: 170%;
+    top: 30%;
+  }
+  68%{
+    transform: rotate(410deg);
+    left: 170%;
+    top: 30%;
+  }
+  70%{
+    transform: rotate(430deg);
+    left: 150%;
+    top: 0%;
+  }
+  75%{
+    transform: rotate(440deg);
+    left: 130%;
+    top: -40%;
+  }
+  80%{
+    transform: rotate(410deg);
+    left: 100%;
+    top: -70%;
+  }
+  85%{
+    transform: rotate(360deg);
+    left: 90%;
+    top: -50%;
+  }
+  90%{
+    transform: rotate(340deg);
+    left: 60%;
+    top: -20%;
+  }
+  95%{
+    transform: rotate(320deg);
+    left: 55%;
+    top: 10%;
+  }
+  98%{
+    transform: rotate(340deg);
+    left: 48%;
+    top: 10%;
+  }
+  100%{
+    transform: rotate(360deg);
+    left: 40%;
+    top: 50%;
+  }
 }
 /* .tail{
   height: 20px;
@@ -50,23 +175,23 @@
 .tail:before{
   content: "";
   height: 16px;
-  background: white;
+  background: black;
   position: absolute;
   width: 30px;
   right: -10px;
   top: 4px;
   border-radius: 40%;
-  transform: rotate(-20deg);
+  transform: rotate(-16deg);
 }
 .tail:after{
   content: "";
   height: 18px;
-  background: white;
+  background: black;
   position: absolute;
   width: 30px;
   right: -10px;
   top: 20px;
   border-radius: 40%;
-  transform: rotate(20deg);
+  transform: rotate(16deg);
 
 }
